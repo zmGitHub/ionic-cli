@@ -1,3 +1,7 @@
+### 1.4.0-alpha.2
+
+* Fix for push API key auth
+
 ### 1.3.10
 
 * Updating after_platform_add hook 010_install_plugins.js to check to see if the directory running the commands is in fact a valid Ionic project directory.
