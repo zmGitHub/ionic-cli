@@ -15,7 +15,8 @@
     "full-release": "node lib/tasks/bumpversion --npmInstall --git --npmPublish",
     "test": "npm run jasmine",
     "e2e": "jasmine-node --captureExceptions ./e2e",
-    "jasmine": "jasmine-node --captureExceptions  ./spec"
+    "jasmine": "jasmine-node --captureExceptions  ./spec",
+    "jshint": "jshint ./lib && jshint ./spec"
   },
   "keywords": [
     "ionic",
@@ -87,6 +88,7 @@
     "xml2js": "0.4.4"
   },
   "devDependencies": {
-    "jasmine-node": "^1.14.5"
+    "jasmine-node": "^1.14.5",
+    "jshint": "2.5.8"
   }
 }
