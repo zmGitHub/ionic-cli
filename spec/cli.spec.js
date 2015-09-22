@@ -8,12 +8,15 @@ var IonicAppLib = require('ionic-app-lib'),
     Utils = IonicAppLib.utils,
     rewire = require('rewire');
 
+
+var runtimeSpy;
+
 describe('Cli', function() {
 
   beforeEach(function() {
     spyOn(IonicCli, 'processExit');
     spyOn(IonicCli, 'printAvailableTasks');
-    spyOn(IonicCli, 'doRuntimeCheck');
+    runtimeSpy = spyOn(IonicCli, 'doRuntimeCheck');
     spyOn(IonicAppLib.events, 'on');
     spyOn(process, 'on');
     spyOn(Info, 'checkRuntime');
@@ -54,7 +57,7 @@ describe('Cli', function() {
 
       it('should run info doRuntimeCheck on run', function() {
         spyOn(IonicCli, 'printHelpLines');
-        IonicCli.run(['node', 'bin/ionic', '--h']);
+        IonicCli.run(['node', 'bin/ionic', 'serve']);
         expect(IonicCli.doRuntimeCheck).toHaveBeenCalled();
       });
 
@@ -126,6 +129,12 @@ describe('Cli', function() {
         spyOn(IonicStats, 't');
         IonicCli.run(['node', 'bin/ionic', 'run', 'ios']);
         expect(IonicStats.t).toHaveBeenCalled();
+      });
+
+      it('should check runtime if doRuntimeCheck is true', function() {
+        runtimeSpy.andReturn(true);
+        IonicCli.run(['node', 'bin/ionic', 'serve']);
+        expect(Info.checkRuntime).toHaveBeenCalled();
       });
     });
   });
@@ -337,12 +346,12 @@ describe('Cli', function() {
         IonicConfigSpy.get.andReturn('1.6.4');
         IonicCli.__set__('IonicConfig', IonicConfigSpy);
         IonicCli.doRuntimeCheck('1.6.5');
-        expect(Info.checkRuntime).toHaveBeenCalled();
+        // expect(Info.checkRuntime).toHaveBeenCalled();
         expect(IonicConfigSpy.get).toHaveBeenCalled();
         expect(IonicConfigSpy.set).toHaveBeenCalledWith('lastVersionChecked', '1.6.5');
         expect(IonicConfigSpy.save).toHaveBeenCalled();
       });
-    })
+    });
 
   });
 });
