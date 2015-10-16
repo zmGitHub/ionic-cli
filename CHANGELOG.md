@@ -6,11 +6,11 @@
 * Linted the entire code base
 * Removed `app` command, which was old and broken
 
-### 1.7.6
+#### 1.7.6
 
 * `ionic-app-lib` updated to `0.6.2`
 
-### 1.7.5
+#### 1.7.5
 
 * `ionic-app-lib` updated to `0.6.1`
 

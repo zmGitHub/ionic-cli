@@ -61,4 +61,3 @@ is merged into `master`.
     $ gulp test
     ```
 
-1. Submit your pull request.
