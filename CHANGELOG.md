@@ -1,52 +1,58 @@
-### 1.7.5
+# Changelog
+
+#### 1.7.6 (unreleased)
+
+* Added `CONTRIBUTING.md` document
+
+#### 1.7.5
 
 * `ionic-app-lib` updated to `0.6.1`
 
-### 1.7.4
+#### 1.7.4
 
-* app-lib @0.6.0
+* `ionic-app-lib` updated to `0.6.0`
 
-### 1.7.3
-
-* Updating app-lib dependency
-
-### 1.7.2
+#### 1.7.3
 
 * Updating app-lib dependency
 
-### 1.7.1
+#### 1.7.2
+
+* Updating app-lib dependency
+
+#### 1.7.1
 
 * Fix incorrect passwords being sent in Android Credentials for security command.
 
-### 1.7.0
+#### 1.7.0
 
 * Added security command for managing Security Profiles.
 * Added package command for Ionic Package.
 
-### 1.6.5
+#### 1.6.5
 
 * Updating app-lib dependency
 
-### 1.6.4
+#### 1.6.4
 
 * Updating app-lib dependency
 
-### 1.6.3
+#### 1.6.3
 
 * Updated tooltips for io command.
 
-### 1.6.2
+#### 1.6.2
 
 * Added `io init` command to initialize your project with ionic.io.
 * Added config command to centralize ionic.io services configuration.
 * Added `--deploy` flag to upload command. 
 
-### 1.6.1
+#### 1.6.1
 
 * Fix(share): Properly checking that the app exists with app id before attemping to upload. Fix login passing args to get from args or prompting.
 * Fix(spelling): Fix spelling mistake of CLI output.
 
-### 1.6.0
+#### 1.6.0
 
 * Fix(upload): Bumped archiver back to 0.5.1 - it was causing an issue related to unzipped compressed files on Android devices - see: https://github.com/driftyco/ionic-cli/issues/494 and https://github.com/archiverjs/node-archiver/issues/113.
 * Refactor(share): Share is now available in ionic-app-lib.
@@ -70,24 +76,24 @@
 * Add build platform to the cordova command. 
 * Bump version of ionic-cordova-lib.
 
-### 1.5.5
+#### 1.5.5
 
 * Fix(start): Fetch codepen was trying to fetch invalid html/css/js files because of a leading '/'. The trailing slash has been removed.
 
-### 1.5.4
+#### 1.5.4
 
 * Fix for error adding Crosswalk to existing ionic project.
 
-### 1.5.3
+#### 1.5.3
 
 * Fix for login issue with share - now correctly prompts for ionic.io login.
 
 
-### 1.5.2
+#### 1.5.2
 
 * Fix for login issue with upload and push - now correctly prompts for ionic.io login.
 
-### 1.5.1
+#### 1.5.1
 
 * Fix for ionic serve to specify a browser.
 * Added help test for ionic push - `ionic help push`.
@@ -96,7 +102,7 @@
 * Fix for ionic upload - removes the BOM (byte order mark) certain users were having - was leaving unwanted artifacts. This has been corrected.
 * Fix to no longer run the hooks permissions on every cordova command.
 
-### 1.5.0
+#### 1.5.0
 
 * Fix for Project - now can work from any directory, not just a directory that contains a project.
 * Fix for Ionic upload - you can now include a note - `ionic upload --note 'This build fixes the menu'`.
@@ -107,12 +113,12 @@
 * Add in settings file to have settings across applications.
 * Fix for `ionic start --io-app-id <app_id>` to properly add the app ID to the project file.
 
-### 1.4.5
+#### 1.4.5
 
 * Fix for `ionic browser remove crosswalk` - fix for passing arguments and app directory.
 * Fix for `ionic browser upgrade crosswalk` - passes app directory correctly.
 
-### 1.4.4
+#### 1.4.4
 
 * Fix upload to now work behind proxies.
 * Fix for start - now includes new plugin ID's for Cordova 5.0.
@@ -120,22 +126,22 @@
 * Ionic run with livereload now shows command tips before and after the cordova command completes.
 * Fix for `ionic run -l --all` - now respects the all addresses to serve on 0.0.0.0.
 
-### 1.4.3
+#### 1.4.3
 
 * Patch an issue where the server commands are not working from the `ionic run` with livereload.
 
-### 1.4.2
+#### 1.4.2
 
 * Fixing a bug with serve that will duplicate console logging from the browser.
 * Fix for a bug when serve wont start console logs with `--consolelogs` argument.
 * Added flag `--platform` for serve command that opens the browser with those platform specific styles (android/ios).
 
-### 1.4.1 
+#### 1.4.1 
 
 * Corrected a bug with ionic state restore command - it now properly passes the app directory to be fixed.
 * Corrected landscape and portrait sizes for the resources command.
 
-### 1.4.0
+#### 1.4.0
 
 * Extracting core logic for the CLI into ionic-app-lib.
 * Certain commands have been moved to the ionic-app-lib - notably: start, serve, hooks, info, browser, and some of cordova commands.
@@ -148,19 +154,19 @@
 * Ionic sass setup now checks that gulp is installed globally - and if not - tells the user how to set it up.
 * Ionic serve command now has a `--nogulp` option to avoid running gulp on serve.
 
-### 1.3.22
+#### 1.3.22
 
 * Fix for the upload command to correct issues with the view app cachebuster
 
-### 1.3.21
+#### 1.3.21
 
 * Fix for Ionic default hooks permissions
 
-### 1.3.20 
+#### 1.3.20 
 
 * Adding in a command with ionic start to provide an ionic io app ID. `ionic start --io-app-id <someid>`
 
-### 1.3.19
+#### 1.3.19
 
 * Added in the `ionic docs` command to assist you in getting Ionic docs opened faster from the CLI! View all with `ionic docs ls`, or type in your desired docs `ionic docs collectionRepeat`. Ionic docs will be opened for the version of Ionic that you are using in your project (ex RC0, RC1, etc).
 * Added in the `ionic state` command to help organize your Cordova platforms and plugins by storing the information in the package.json file. Try out `ionic state save` and `ionic state restore`.
@@ -170,7 +176,7 @@
 * Updated latest Cordova Android commits from Cordova master to fix various bugs.
 * Updated latest Cordova Crosswalk Engine from master to fix various bugs.
 
-### 1.3.18
+#### 1.3.18
 
 * Added an option to `ionic serve` to specify a default browser for that Ionic project. `ionic serve --defaultBrowser safari`
 * Added an option when adding platforms to not include the default Ionic cordova hooks - `ionic platform add ios --no-hook`
@@ -178,7 +184,7 @@
 * Added an argument to not add default Ionic icon and splash screen resources
 * Modified the cordova run command to check for the platform passed - this should resolve issues users are having with crosswalk and android.
 
-### 1.3.17
+#### 1.3.17
 
 * Added in default Ionic icons and splashscreens for your iOS and Android applications! Try them out `ionic resources --default`.
 * To note: if you have entries in your config.xml file for icons or splashscreens or files existing in your resources directory,
@@ -189,27 +195,27 @@
 * Ionic info will now look up your version of ios-deploy - which is needed for ios application deployments - `ionic info`
 
 
-### 1.3.16
+#### 1.3.16
 
 * Added the ability to share an Ionic app with another user via email `ionic share developer@theirdomain.com`
 
-### 1.3.15
+#### 1.3.15
 
 * Updated the `ionic link` command to work properly with the `--reset` option
 * Fixed the `ionic run --livereload` on windows - now properly gives the prompt for server commands.
 * Updated Crosswalk Versions for Canary 13.41.318.0 and beta of 12.41.296.4.
 * Fixed the `ionic login` command to properly look at email addresses without lowercasing them.
 
-### 1.3.14
+#### 1.3.14
 
 * Fixing the `ionic emulate --livereload` and `ionic run --livereload` to continue to accept user input for server commands.
 * Added the `ionic link` command to allow you to specify your Ionic App ID.
 
-### 1.3.13
+#### 1.3.13
 
 * Added the ionic.project property `createDocumentRoot` to aid users with build systems to create the folder and run tasks before calling serve.
 
-### 1.3.12
+#### 1.3.12
 
 * Explicitly state which platform resources should be built by providing a platform name in the command
 * The serve command now allows you to specify a browser to open other than your default - `ionic serve --browser safari`
@@ -220,7 +226,7 @@
 * Added in the `proxyNoAgent` property on `ionic.project` proxies to be true/false, if true opts out of connection pooling, see [HttpAgent](http://nodejs.org/api/http.html#http_class_http_agent)
 
 
-### 1.3.11
+#### 1.3.11
 
 * Updating task order in the CLI output for help - putting more important tasks at the top, and lesser used ones at the bottom.
 * Updated README to have basic info at top, more advanced information at bottom.
@@ -231,7 +237,7 @@
 * Updated README to give user instructions to avoid using sudo.
 * Changed module for opbeat to use forked version - `opbeat-ionic` that will help us log uncaught exceptions with ionic-cli and user environment runtime information
 
-### 1.3.10
+#### 1.3.10
 
 * Updating after_platform_add hook 010_install_plugins.js to check to see if the directory running the commands is in fact a valid Ionic project directory.
 * ionic start now checks that you pass a valid directory name, no longer accepting '.'
@@ -239,7 +245,7 @@
 * Checks for invalid contents of your config.xml file and reports those to help you fix the errors
 * Fix for `ionic info` - now properly displays OSX Mavericks as operating system if it is indeed Mavericks
 
-### 1.3.9
+#### 1.3.9
 
 * Fixed an error where running `ionic serve` and then pressing `q` in the console would have an error trying to close a non-existent process
 * Fixing an error where it tries to read a promise from a null/undefined object.
@@ -251,32 +257,32 @@
 * Modified browser process to change permissions on files using `fs` instead of `shelljs`
 * Now upon receiving an error, the CLI will dump system environment information to help the user copy/paste to issues
 
-### 1.3.8
+#### 1.3.8
 
 * Added a check in reading to read the ionic.project file in and catches and reports any exception that may from loading invalid characters in JSON.
 * Added in an additional browser command `ionic browser clean` that will clean out all the artifacts from the browser additions
 * Modified the browser addition process by copying crosswalk libraries over as its own method, and calling this even if the xwalk libraries are downloaded.
 
-### 1.3.7
+#### 1.3.7
 
 * Fixed some capitalization errors on the Ionic download url
 
-### 1.3.6
+#### 1.3.6
 
 * Fixed some bad lowercasing in the sign up prompt with IONIC_DASH
 
-### 1.3.5
+#### 1.3.5
 
 * Added a sign up prompt after starting a new ionic app to create an ionic.io account to take advantage of all the extra features Ionic has to provide.
 
-### 1.3.4
+#### 1.3.4
 
 * Added the ionic news updates for when `ionic start` finishes - alerts the users of the latest changes for ionic
 * Updated cordova android and the cordova crosswalk engine to be versioned. Now they pull the latest dev commits.
 * Due to the cordova crosswalk engine changing its plugin ID, the browser command now removes the older plugin name (org.apache.cordova.crosswalk.engine to org.crosswalk.engine)
 * Updated cordova android to have a gradle.properties file to give the user options to build multiple architectures by default
 
-### 1.3.3
+#### 1.3.3
 
 * Added the ability to specify an address when using `ionic serve` by specifying the address as an argument: `ionic serve --address 192.168.1.100`
 * Added the ability to download and target select versions of beta / canary versions of Crosswalk - see `ionic browser list` to see versions available.
@@ -297,11 +303,11 @@
 * Adding a cordova hook to install plugins listed in package.json file as `cordovaPlugins` after a platform is added to the project.
 
 
-### 1.3.2
+#### 1.3.2
 
 * Added another fix for the way the cookies were handled for `ionic upload` - changing from `cookie.name` to `cookie.key`
 
-### 1.3.1
+#### 1.3.1
 
 * [Adding the Crosswalk browser for Ionic](http://ionicframework.com/blog/crosswalk-comes-to-ionic/)
 * See all the browsers available to install - `ionic browser list`. *NOTE: Only stable releases are allowed for now.*
@@ -309,14 +315,14 @@
 * Caching the Crosswalk downloads - once you’ve installed a version in a project, running `ionic browser add crosswalk` will not re-download the webviews if they have previously been downloaded.
 * Fixed an issue with `ionic upload` - now you should be able to log in and re-use your login cookies without errors.
 
-### 1.3.0
+#### 1.3.0
 
 * You can now use [Crosswalk in your Android projects](http://forum.ionicframework.com/t/crosswalk-integration-beta-in-ionic-cli/15190). Crosswalk is a way to package your Chrome Webview and use it with Cordova. Use the `ionic help browser` command to get more information about it.
 * Automatically add the `SplashScreen` and `SplashScreenDelay` preference configs for Android splash screens
 * When an orientation is locked using the [preference config](http://cordova.apache.org/docs/en/edge/config_ref_index.md.html#The%20config.xml%20File_global_preferences), only build the necessary splash screen images
 
 
-### 1.2.14
+#### 1.2.14
 
 * [Automating Icons and Splash Screens](http://ionicframework.com/blog/automating-icons-and-splash-screens/)
 * Automatically create icon resources from source file: `ionic resources --icon`
@@ -324,27 +330,27 @@
 * Update config.xml resource platform nodes
 
 
-### 1.2.13
+#### 1.2.13
 
 * Locking Gulp at 3.8.8 to avoid adding the v8flags module dependency
 
 
-### 1.2.12
+#### 1.2.12
 
 * Updating the npm-shrinkwrap
 
 
-### 1.2.11
+#### 1.2.11
 
 * Updating the Labs styles
 
 
-### 1.2.10
+#### 1.2.10
 
 * Updated the serve command for the `serve --labs` to use `IONIC_LAB_URL`
 
 
-### 1.2.9
+#### 1.2.9
 
 * [Introduced Ionic Labs](http://ionicframework.com/blog/ionic-lab/) - a way to see preview iOS and Android side by side in the browser
 * Added proxy-middleware to provide proxying to APIs from the `serve` command
@@ -355,18 +361,18 @@
 * Ionic now reads the Node environment variable `http_proxy` along with the passed `PROXY` variable to get around a local proxy
 
 
-### 1.2.8
+#### 1.2.8
 
 * CSRF cookie fixes
 
 
-### 1.2.7
+#### 1.2.7
 
 * npm-shrinkwrap
 * Update ionic.io API URL
 
 
-### 1.2.6
+#### 1.2.6
 
 * Fix `fs.chmodSync: Error: ENOENT` for existing projects
 * Fix lib update
@@ -374,7 +380,7 @@
 * Starter projects can provide `app.json` to specify plugins and sass setup
 
 
-### 1.2.5
+#### 1.2.5
 
 * Do not watch `www/lib/` files by default
 * Set watchPatterns within ionic.project config file
@@ -385,7 +391,7 @@
 * Do not prompt for address selection when there's only one
 
 
-### 1.2.4
+#### 1.2.4
 
 * Use `cross-spawn` module to fix errors with using spawn on Windows
 * Start ionic project from any Github repo
@@ -395,7 +401,7 @@
 * Refactor sass setup to use gulpStartupTasks ionic.project property instead
 
 
-### 1.2.3
+#### 1.2.3
 
 * From the server, use `restart` or `r` to restart the client app from the root
 * From the server, use `goto` or `g` a url to have the client app navigate to the given url
@@ -412,19 +418,19 @@
 * Fix config.xml errors when in the wrong working directory [#84](https://github.com/driftyco/ionic-cli/issues/84)
 
 
-### 1.2.2
+#### 1.2.2
 
 * ReferenceError hot fix
 
 
-### 1.2.1
+#### 1.2.1
 
 * Clean up any cmd flags which may confuse Cordova [#83](https://github.com/driftyco/ionic-cli/issues/83)
 * Select available IP address prompt [#82](https://github.com/driftyco/ionic-cli/issues/82)
 * Fix black screen on load [#81](https://github.com/driftyco/ionic-cli/issues/81)
 
 
-### 1.2.0
+#### 1.2.0
 
 * LiveReload from a native app during development
 * Option to print out console logs to the terminal
