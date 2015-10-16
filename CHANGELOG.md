@@ -3,6 +3,8 @@
 #### 1.7.6 (unreleased)
 
 * Added `CONTRIBUTING.md` document
+* Linted the entire code base
+* Removed `app` command, which was old and broken
 
 #### 1.7.5
 
