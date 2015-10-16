@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
-    eslint = require('gulp-eslint');
+    eslint = require('gulp-eslint'),
+    shell = require('gulp-shell');
 
 gulp.task('lint', function() {
     return gulp.src(['lib/**/*.js'])
@@ -8,4 +9,4 @@ gulp.task('lint', function() {
         .pipe(eslint.failAfterError());
 });
 
-gulp.task('default', ['lint']);
+gulp.task('test', shell.task(['npm run test']));

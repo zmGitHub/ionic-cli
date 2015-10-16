@@ -54,13 +54,12 @@
   ],
   "eslintConfig": {
     "extends": "eslint:recommended",
-    "globals": {
-    },
+    "globals": {},
     "env": {
       "node": true
     },
     "rules": {
-        "no-console": 0
+      "no-console": 0
     }
   },
   "license": "MIT",
@@ -102,6 +101,7 @@
   "devDependencies": {
     "gulp": "https://registry.npmjs.org/gulp/-/gulp-3.8.8.tgz",
     "gulp-eslint": "^1.0.0",
+    "gulp-shell": "^0.5.0",
     "jasmine-node": "^1.14.5",
     "rewire": "^2.3.4"
   }
