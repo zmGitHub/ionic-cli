@@ -52,6 +52,17 @@
       "email": "josh@drifty.com"
     }
   ],
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "globals": {
+    },
+    "env": {
+      "node": true
+    },
+    "rules": {
+        "no-console": 0
+    }
+  },
   "license": "MIT",
   "dependencies": {
     "async": "^0.9.0",
@@ -89,6 +100,8 @@
     "xml2js": "0.4.4"
   },
   "devDependencies": {
+    "gulp": "https://registry.npmjs.org/gulp/-/gulp-3.8.8.tgz",
+    "gulp-eslint": "^1.0.0",
     "jasmine-node": "^1.14.5",
     "rewire": "^2.3.4"
   }
