@@ -567,3 +567,20 @@ The `ionic state clear` method will clear out your platforms and plugins directo
 The `ionic state reset` method will first remove your platforms and plugins folders. Then it will look at your `package.json` file to re-install the platforms and plugins as specified there.
 
 This command can be helpful for you to reinstall your plugins and platforms to get a fresh start.
+
+
+# Ionic CLI 2.0
+
+## Ionic Generators
+
+First class support has come to the Ionic CLI to scaffold and generate Ionic and Angular 2 components. To use this feature, first install the V2 Ionic CLI: `npm install ionic@alpha` and start an app.
+
+Once in the app folder, use the `generate` command (alias: `g`).
+
+Usage:
+* `ionic generate page About` - Generate a page named About with HTML, JavaScript, and Sass named `about`.
+* `ionic g tabs MyTabPage` - Generate a page named MyTabPage, queries for the amount of tabs, and creates pages for those tabs.
+
+List:
+
+View all generators: `ionic g --list`.
