@@ -69,7 +69,6 @@
     "inquirer": "^0.11.0",
     "ionic-app-lib": "2.0.0-alpha.17",
     "ncp": "0.4.2",
-    "npm": "2.1.3",
     "open": "0.0.5",
     "optimist": "0.6.0",
     "progress": "1.1.7",
@@ -90,37 +89,5 @@
   "devDependencies": {
     "jasmine-node": "^1.14.5",
     "rewire": "^2.3.4"
-  },
-  "bundledDependencies": [
-    "async",
-    "cheerio",
-    "cli-table",
-    "colors",
-    "connect",
-    "connect-livereload",
-    "crc",
-    "cross-spawn",
-    "event-stream",
-    "finalhandler",
-    "form-data",
-    "gulp",
-    "ncp",
-    "npm",
-    "open",
-    "optimist",
-    "progress",
-    "prompt",
-    "proxy-middleware",
-    "q",
-    "request",
-    "request-progress",
-    "semver",
-    "serve-static",
-    "shelljs",
-    "tiny-lr-fork",
-    "underscore",
-    "unzip",
-    "vinyl-fs",
-    "xml2js"
-  ]
+  }
 }
