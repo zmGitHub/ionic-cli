@@ -1,6 +1,6 @@
 {
   "name": "ionic",
-  "version": "2.0.0-alpha.16",
+  "version": "2.0.0-alpha.17",
   "preferGlobal": true,
   "description": "A tool for creating and developing Ionic Framework mobile apps.",
   "homepage": "http://ionicframework.com/",
@@ -90,5 +90,37 @@
   "devDependencies": {
     "jasmine-node": "^1.14.5",
     "rewire": "^2.3.4"
-  }
+  },
+  "bundledDependencies": [
+    "async",
+    "cheerio",
+    "cli-table",
+    "colors",
+    "connect",
+    "connect-livereload",
+    "crc",
+    "cross-spawn",
+    "event-stream",
+    "finalhandler",
+    "form-data",
+    "gulp",
+    "ncp",
+    "npm",
+    "open",
+    "optimist",
+    "progress",
+    "prompt",
+    "proxy-middleware",
+    "q",
+    "request",
+    "request-progress",
+    "semver",
+    "serve-static",
+    "shelljs",
+    "tiny-lr-fork",
+    "underscore",
+    "unzip",
+    "vinyl-fs",
+    "xml2js"
+  ]
 }
